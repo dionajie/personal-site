@@ -8,7 +8,7 @@ This Repo is my personal website (http://dionajie.com) that can re-use by anyone
  
 # How to Start
 ### Add Linkedin Resume 
-  - Instruction to download your Linkedin Archive and Expost to Json ([LinkedinToJson])
+  - Link Instruction to download your Linkedin Archive and Export it to Json ([LinkedinToJson])
   - Save and Upload to your parent directory
   - Place your URL to Javascript at index.php 
 ```sh
