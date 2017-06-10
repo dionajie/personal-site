@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title> My Personal Site</title>
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/app.css">
+
+    <!-- Code 
+        Linkedin to JSON : https://jmperezperez.com/linkedin-to-json-resume/
+
+        Timeline CSS : https://bootsnipp.com/snippets/featured/timeline
+        Medium RSS JSON Display : https://codepen.io/jasonm4130/pen/vZYbQx by @jasonm4130
+        Smooth Scrolling  : https://css-tricks.com/snippets/jquery/smooth-scrolling/
+        Card : http://www.marcellop.com/bootplus/
+        Social Buttons : https://bootsnipp.com/snippets/featured/spinning-social-icons
+    -->
+
+    <style>
+        body {
+            font-family: 'Lato';
+        }
+
+        h1,h2,h3,h4 {
+            font-family: 'Lato';
+        }
+
+        .fa-btn {
+            margin-right: 6px;
+        }
+
+        .navbar {
+            background-color: white;
+        }
+
+        #app-layout {
+            background-color: #f5f5f5 !important;
+        }
+
+    </style>
+</head>
+<body id="app-layout">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+
+                <!-- Collapsed Hamburger -->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <!-- Branding Image -->
+                <a class="navbar-brand" href="" style="color: #4e7cff">
+                    My Personal Site
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="app-navbar-collapse">
+                <!-- Left Side Of Navbar -->
+                <!-- 
+                <ul class="nav navbar-nav">
+                    <li><a href="{{ url('/home') }}">Home</a></li>
+                </ul>
+                 -->  
+
+                <!-- Right Side Of Navbar -->
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="header-image">
+      <!-- If you need background image, you can enable it and change color of header text for visibility -->
+       <!-- <img src="https://res.cloudinary.com/dgu8hn3xt/image/upload/c_scale,w_1669/v1496701870/sai-kiran-anagani-61187_jju3xa.png" alt="header" class="img-responsive"> -->
+
+      <div class="row">
+        <div class="col" id="header-text">
+          <div class="container">
+            <div class="col-md-12">
+              <h4 style="font-family: Lato;"> Hi! Welcome to My Personal Site. </h4>
+            </div>
+            <div class="col-md-6">
+              <p style="width:" id="summary"></p>
+            </div>
+            <div class="col-md-12">
+              <ul class="social-network social-circle">
+                  <li><a href="#" class="icoMedium" title="Medium"><i class="fa fa-medium" target="_blank"></i></a></li>
+                  <li><a href="#" class="icoFacebook" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="#" class="icoTwitter" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin" target="_blank"></i></a></li>
+              </ul>       
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <section  id="resume" style="padding-top: 40px; margin-top: -40px;">
+        <div class="row">
+          <div class="col-md-12">
+            <header class="section-heading">
+              <h2> <i class="fa fa-briefcase" aria-hidden="true"></i> Experience</h2>
+            </header>
+            <ul class="timeline" id="experience"> </ul>
+          </div>
+        </div>
+      </section>
+
+        <div class="row">
+          <div class="col-md-12">
+            <header class="section-heading" style="margin-top: 50px">
+              <h2> <i class="fa fa-cogs" aria-hidden="true"></i> Skills</h2>
+            </header>
+            <div id="skills" style="display: inline-block; margin-bottom: 20px;"> </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <header class="section-heading" style="margin-top: 50px">
+              <h2><i class="fa fa-flask" aria-hidden="true"></i> Projects</h2>
+            </header>
+            <div class="row" id="projects"> </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <section class="section blog" id="blog" style="margin-top: 50px">
+            <div class="container">
+              <header class="section-heading">
+                <h2><i class="fa fa-medium" aria-hidden="true"></i> From Medium</h2>
+              </header>
+
+              <div class="section-content" id="blogContent">
+                <div class="row" id="jsonContent"></div>
+              </div>
+
+              <div class="text-center" style="margin-bottom: 10px;"><a class="btn btn-primary" id="loadBlogPosts" href="//blog.dionajie.com" target="_blank">View All <span class="fa fa-angle-double-right"></span></a></div>
+
+              <div style="border-bottom: 1px solid #777; margin-bottom: 10px; margin-top: : 10px !important"> </div>
+            </div>
+
+          </section>
+        </div>
+    </div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js" integrity="sha384-I6F5OKECLVtK/BL+8iSLDEHowSAfUo76ZL9+kGAgTRdiByINKJaqTPH/QVNS1VDb" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+
+<script type="text/javascript">
+    /*
+      Your resume.json URL
+      ex : 'https://yourdomain.com/resume.json'
+    */
+    var resume ='';
+
+    /*
+      Your Medium Publication feed URL 
+      ex : 'https://yourpublication.com/feed'
+      https://help.medium.com/hc/en-us/articles/214874118-RSS-feeds
+    */
+    var rss_medium = '';
+    
+    $(function() {
+      // Linkedin Resume
+      var $contentExperience =  $('#experience');
+      var outputExperience = '';
+      var classTimeline = '';
+
+      var $contentSkills =  $('#skills');
+      var outputSkills = '';
+
+      var $contentHeader = $('#summary');
+      var outputHeader = '';
+
+      var $contentProject = $('#projects');
+      var outputProject = '';
+
+      
+      $.getJSON(resume, function(data) {
+
+          // Experience 
+          $.each(data.work, function(i, row) {
+              if(i % 2 == 1) {
+                  classTimeline = 'timeline-inverted';
+              } else {
+                  classTimeline = '';
+              }
+              outputExperience += '<li class="'+ classTimeline +'"> <div class="timeline-badge"><i class="fa fa-briefcase" aria-hidden="true"></i></div> <div class="timeline-panel"> <div class="timeline-heading"> <h4 class="timeline-title">' + row.company +' - ' + row.position + '</h4>';
+              if(row.endDate) {
+              outputExperience += '<p><strong class="text-muted"><i class="fa fa-calendar" aria-hidden="true"></i> '+ moment(row.startDate).format('MMM YY') +' - ' + moment(row.endDate).format('MMM YY')+' ('+ moment.utc(moment(row.endDate,"YYYY-MM-DD").diff(moment(row.startDate,"YYYY-MM-DD"))).format("M") +' Month) </strong></p> </div>';
+              } else {
+              outputExperience += '<p><strong class="text-muted"><i class="fa fa-calendar" aria-hidden="true"></i> '+ moment(row.startDate).format('MMM YY') +' - Present </strong></p> </div>'
+              }
+
+              if(row.summary !== "") {
+                outputExperience += ' <div class="timeline-body"> <p> ' +row.summary+ '</p> ';
+              } else {
+                outputExperience += ' <div class="timeline-body">  ';
+              }
+
+              if(row.website !== "") {
+                outputExperience += '<hr>  <a href="'+row.website+'" target="_blank" class="btn btn-primary btn-sm pull-right"> <i class="fa fa-link" aria-hidden="true"></i>  Website </a> ';
+              }
+
+              outputExperience += '</div> </div> </li>';
+          });
+
+          // Skills
+          $.each(data.skills, function(i, row) {
+              outputSkills += '<span class="label label-primary"> '+ row.name +' </span> ';
+          });
+
+          // Projects
+          $.each(data.projects, function(i, row) {
+              outputProject += '<div class="col-md-4"> <div class="card">';
+              outputProject += '<h4 class="card-heading simple"> ' + row.name +  '</h4>';
+
+              if(row.summary) {
+                outputProject += '<div class="card-body"> ' + row.summary +  ' </div>';
+              }
+
+              if(row.url) {
+                outputProject += '<div class="card-actions">  <a href="'+row.url+'" target="_blank" class="btn btn-primary btn-sm pull-right"> <i class="fa fa-link" aria-hidden="true"></i>  Link to Project </a> </div> </div> </div>';
+              } else {
+                outputProject += '</div> </div>';
+              }
+          });
+
+          // Summary Header
+          outputHeader += 'My name is '+data.basics['name']+' - '+ data.basics['label'] + '. ' + data.basics['summary'] + '';
+
+          $contentExperience.html(outputExperience);
+          $contentSkills.html(outputSkills);
+          $contentHeader.html(outputHeader);
+          $contentProject.html(outputProject);
+      });
+    });
+
+    // Medium Parser
+    $(function() {
+
+        var $content = $('#jsonContent');
+        var data = {
+            rss_url: rss_medium,
+        };
+      
+        $.get('https://api.rss2json.com/v1/api.json', data, function (response) {
+        
+            if (response.status == 'ok') {
+                var output = '';
+
+                $.each(response.items, function (k, item) {
+                  if(k < 3){
+                      output += '<div class="col-sm-6 col-md-4">';
+                      output += '<div class="blog-post"><header>';
+                      output += '<h4 class="date">' + moment(item.pubDate).format('DD <br> MMM') + "</h4>";
+                      var tagIndex = item.description.indexOf('<img'); // Find where the img tag starts
+                      var srcIndex = item.description.substring(tagIndex).indexOf('src=') + tagIndex; // Find where the src attribute starts
+                      var srcStart = srcIndex + 5; // Find where the actual image URL starts; 5 for the length of 'src="'
+                      var srcEnd = item.description.substring(srcStart).indexOf('"') + srcStart; // Find where the URL ends
+                      var src = item.description.substring(srcStart, srcEnd); // Extract just the URL
+                      output += '<div class="blog-element item-image"><img src="' + src + '"></div></header>';
+                      output += '<div class="blog-content"><h4><a href="'+ item.link + '" target="_blank">' + item.title + '</a></h4>';
+                      output += '<div class="post-meta"><span>By ' + item.author + '</span></div>';
+                      var yourString = item.description.replace(/<img[^>]*>/g,""); //replace with your string.
+                      var maxLength = 120 // maximum number of characters to extract
+                      //trim the string to the maximum length
+                      var trimmedString = yourString.substr(0, maxLength);
+                      //re-trim if we are in the middle of a word
+                      trimmedString = trimmedString.substr(0, Math.min(trimmedString.length, trimmedString.lastIndexOf(" ")))
+                      output += '<p>' + trimmedString + '...</p>';
+                      output += '</div></div></div>';
+                  } else {
+                           visibleSm = ' visible-sm';
+                  }
+                });
+          
+                $content.html(output);
+            }
+        });
+    });
+
+
+    // Smooth Scroll
+    $('a[href*="#"]')
+      .not('[href="#"]')
+      .not('[href="#0"]')
+      .click(function(event) {
+
+        if (
+          location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+          && 
+          location.hostname == this.hostname
+        ) {
+
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+
+          if (target.length) {
+            event.preventDefault();
+            $('html, body').animate({
+              scrollTop: target.offset().top
+            }, 500, function() {
+
+              var $target = $(target);
+              $target.focus();
+              if ($target.is(":focus")) { 
+                return false;
+              } else {
+               
+                $target.focus(); 
+              };
+            });
+          }
+        }
+      });
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,275 @@
+{
+  "basics": {
+    "name": "Dion Ajie",
+    "label": "Full-Stack Web Developer",
+    "phone": "",
+    "website": "",
+    "summary": "Experienced Web Developer with a demonstrated history of working in the computer software industry. Skilled in Programming and Databases. Strong engineering professional with a Bachelor's degree focused in Computer Science from Universitas Pendidikan Indonesia.",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "",
+      "countryCode": "",
+      "region": ""
+    },
+    "profiles": []
+  },
+  "work": [
+    {
+      "company": "Telekomunikasi Indonesia",
+      "position": "Freelance Web Developer",
+      "website": "",
+      "startDate": "2017-05-01",
+      "summary": "Service Platform Operations Application for internal use only",
+      "highlights": [],
+      "endDate": "2017-05-01"
+    },
+    {
+      "company": "Telekomunikasi Indonesia",
+      "position": "Freelance Web Developer",
+      "website": "",
+      "startDate": "2016-09-01",
+      "summary": "Startup directory website for internal use only",
+      "highlights": [],
+      "endDate": "2016-11-01"
+    },
+    {
+      "company": "BAPPEDA - Pemerintah Kota Cimahi",
+      "position": "Web Developer",
+      "website": "",
+      "startDate": "2016-04-01",
+      "summary": "",
+      "highlights": []
+    },
+    {
+      "company": "Suitmedia",
+      "position": "Web Development Intern",
+      "website": "",
+      "startDate": "2015-02-01",
+      "summary": "Develop android apps : HealthyWay and ResiBox\nResponsible for Web Service Development",
+      "highlights": [],
+      "endDate": "2015-05-01"
+    },
+    {
+      "company": "Comlabs-USDI ITB",
+      "position": "Web Developer",
+      "website": "",
+      "startDate": "2014-09-01",
+      "summary": "",
+      "highlights": [],
+      "endDate": "2015-01-01"
+    },
+    {
+      "company": "UNIVERSITAS PENDIDIKAN INDONESIA",
+      "position": "Teaching and Laboratory Assistant",
+      "website": "",
+      "startDate": "2013-08-01",
+      "summary": "Teach some class, create teaching modules, give and check assignment for practical section on Database and Database System course. Also manage database laboratory.",
+      "highlights": [],
+      "endDate": "2014-06-01"
+    },
+    {
+      "company": "Club Ink On Dinamik 8",
+      "position": "Project Officer",
+      "website": "",
+      "startDate": "2013-02-01",
+      "summary": "Manage Club Ink's booth, handle exhibition and Photobooth service",
+      "highlights": [],
+      "endDate": "2013-02-01"
+    },
+    {
+      "company": "UNIVERSITAS PENDIDIKAN INDONESIA",
+      "position": "Teaching Assistant",
+      "website": "",
+      "startDate": "2012-09-01",
+      "summary": "Teach some class, create teaching modules, give and check assignment for practical section on Introducing to Information Technology course.",
+      "highlights": [],
+      "endDate": "2013-01-01"
+    }
+  ],
+  "education": [
+    {
+      "institution": "Plus Senior High School",
+      "area": "",
+      "studyType": "",
+      "startDate": "2008-01-01",
+      "gpa": "",
+      "courses": [],
+      "endDate": "2011-01-01"
+    },
+    {
+      "institution": "Universitas Pendidikan Indonesia",
+      "area": "",
+      "studyType": "Bachelor's degree",
+      "startDate": "2011-01-01",
+      "gpa": "",
+      "courses": [],
+      "endDate": "2016-01-01"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Databases",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Web Services API",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Microsoft SQL Server",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Web Development",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Graphic Design",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Web Design",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "PHP",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "MySQL",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "JavaScript",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Ubuntu",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Front-end Development",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Python",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "C",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Back-end Development",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "CodeIgniter",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Zend Framework",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Laravel",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Twitter API",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Cascading Style Sheets (CSS)",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "HTML",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Data Mining",
+      "level": "",
+      "keywords": []
+    }
+  ],
+  "languages": [
+    {
+      "language": "Indonesian",
+      "fluency": "Native or bilingual"
+    },
+    {
+      "language": "English",
+      "fluency": "Full professional"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Service Platform Operations Application",
+      "startDate": "undefined-2017-01",
+      "summary": "",
+      "url": ""
+    },
+    {
+      "name": "Startup Discovery OIM",
+      "startDate": "2016-09-01",
+      "summary": "",
+      "url": "",
+      "endDate": "2016-11-01"
+    },
+    {
+      "name": "SIMRENDA - Sistem Perencanaan Daerah",
+      "startDate": "2016-04-01",
+      "summary": "",
+      "url": ""
+    },
+    {
+      "name": "JIW Shop",
+      "startDate": "2015-12-01",
+      "summary": "Online Shop Management Software",
+      "url": ""
+    },
+    {
+      "name": "ResiBox - Cek Ongkos Kirim dan Cek Resi Pengiriman melalui JNE, POS, TIKI, dll",
+      "startDate": "2015-03-01",
+      "summary": "Responsible for Web Service Development",
+      "url": "",
+      "endDate": "2015-05-01"
+    },
+    {
+      "name": "HealthyWay - Pencarian dan Rekomendasi Fasilitas Kesehatan Kota Bandung",
+      "startDate": "2015-02-01",
+      "summary": "Responsible for Web Service Development",
+      "url": "",
+      "endDate": "2015-04-01"
+    },
+    {
+      "name": "SILEMKERMA - DIKTI",
+      "startDate": "2014-09-01",
+      "summary": "Sistem Informasi Direktorat Kelembagaan dan Kerjasama DIKTI",
+      "url": "http://silemkerma.dikti.go.id",
+      "endDate": "2015-01-01"
+    }
+  ]
+}
