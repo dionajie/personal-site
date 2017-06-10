@@ -10,7 +10,7 @@ This Repo is my personal website (http://dionajie.com) that can re-use by anyone
 ### Add Linkedin Resume 
   - Link Instruction to download your Linkedin Archive and Export it to Json ([LinkedinToJson])
   - Save and Upload to your parent directory
-  - Place your URL to Javascript at index.php 
+  - Place your URL to Javascript at index.html 
 ```sh
 var resume ='yourdomain.com/resume.json';
 ```
@@ -18,7 +18,7 @@ var resume ='yourdomain.com/resume.json';
 
 ### Add Medium Publication
   - Read more about Medium RSS Feed ([RssFeed])
-  - Place your URL to Javascript at index.php 
+  - Place your URL to Javascript at index.htnl 
 ```sh
 var rss_medium = 'yourpublication.com/feed';
 ```
