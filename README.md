@@ -1,6 +1,6 @@
 # Personal Site
 
-This Repo is my personal website that can re-use by anyone. You can generate Linkedin Resume and Article from your Medium Publication automatically
+This Repo is my personal website (http://dionajie.com) that can re-use by anyone. You can generate Linkedin Resume and Article from your Medium Publication automatically
 
 # Features
   - Show your Linkedin Resume 
