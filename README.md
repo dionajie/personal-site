@@ -28,3 +28,5 @@ var rss_medium = 'yourpublication.com/feed';
 [LinkedinToJson]: <https://jmperezperez.com/linkedin-to-json-resume/>
 [RssFeed]: <https://help.medium.com/hc/en-us/articles/214874118-RSS-feeds>
 
+# Extra
+Thank's to @jasonm4130 for Medium RSS Parses : https://codepen.io/jasonm4130/pen/vZYbQx 
