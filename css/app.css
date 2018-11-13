@@ -815,8 +815,8 @@ ul.social-network li {
 .social-network a.icoMedium:hover {
   background-color: #00ab6c;
 }
-.social-network a.icoFacebook:hover {
-  background-color:#3B5998;
+.social-network a.icoGithub:hover {
+  background-color:rgb(0, 0, 0);
 }
 .social-network a.icoTwitter:hover {
   background-color:#33ccff;
@@ -830,7 +830,7 @@ ul.social-network li {
 .social-network a.icoLinkedin:hover {
   background-color:#007bb7;
 }
-.social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
+.social-network a.icoRss:hover i, .social-network a.icoGithub:hover i, .social-network a.icoTwitter:hover i,
 .social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i {
   color:#fff;
 }

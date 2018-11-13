@@ -16,6 +16,14 @@
   },
   "work": [
     {
+      "company": "BAPPEDA - Pemerintah Kota Cimahi",
+      "position": "Web Developer",
+      "website": "",
+      "startDate": "2016-04-01",
+      "summary": "",
+      "highlights": []
+    },
+    {
       "company": "Telekomunikasi Indonesia",
       "position": "Freelance Web Developer",
       "website": "",
@@ -32,14 +40,6 @@
       "summary": "Startup directory website for internal use only",
       "highlights": [],
       "endDate": "2016-11-01"
-    },
-    {
-      "company": "BAPPEDA - Pemerintah Kota Cimahi",
-      "position": "Web Developer",
-      "website": "",
-      "startDate": "2016-04-01",
-      "summary": "",
-      "highlights": []
     },
     {
       "company": "Suitmedia",
